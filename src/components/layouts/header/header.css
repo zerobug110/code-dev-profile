@@ -1,0 +1,23 @@
+.header {
+    background-color: rgb(15, 9, 22);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.header__nav--list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
