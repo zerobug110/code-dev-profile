@@ -5,11 +5,5 @@ body {
   
 }
 
-.home {
-  background-color: red;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  display: none;
+.App {
 }

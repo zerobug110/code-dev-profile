@@ -4,7 +4,7 @@ import { Header } from './components/layouts/header/header';
 
 function App() {
   return (
-    <div className="home">
+    <div className="App">
       <Header/>
       <Footer/>
     </div>
