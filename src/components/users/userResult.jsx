@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { UserItem } from "./usersItem";
+import { useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 export const UserResults = () => {
@@ -27,10 +28,11 @@ export const UserResults = () => {
     if(!loading) {
         return (
             <div className="users">
-                {users.map((users) =>{
+                {users.map((user) =>{
                     return(
-                        <div className="users">
-                            <h3>{users.login}</h3>  
+                        <div className="users__container">
+                            <h3>{user.login}</h3>  
+                            <UserItem key={user.id} user={user}/>
                         </div>
 
                     )
@@ -39,10 +41,10 @@ export const UserResults = () => {
         )
     }else {
         return(
-            <div className="spinning">                
+            <div className="spinner">                
                 <PropagateLoader
                 color="#efefef"
-                loading
+                loading               
                 speedMultiplier={0}
                 />
             </div>
