@@ -28,8 +28,8 @@ export const UserResults = () => {
             <div className="users">
                 {users.map((users) =>{
                     return(
-                        <div class0Name="users">
-                        <h3>{users.login}</h3>  
+                        <div className="users">
+                            <h3>{users.login}</h3>  
                         </div>
 
                     )
@@ -38,7 +38,9 @@ export const UserResults = () => {
         )
     }else {
         return(
-            <h3>loading...</h3>
+            <div className="spinning">
+                <h3 className="loading">loading</h3>
+            </div>
         )
     }
     
