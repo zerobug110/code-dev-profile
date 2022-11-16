@@ -1,6 +1,7 @@
 import { UserResults } from "../../components/users/userResult"
 
-export const home = () => {
+export const Home = () => {
+
     return (
         <div className="home">
             <UserResults/>   
