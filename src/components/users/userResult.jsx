@@ -28,7 +28,10 @@ export const UserResults = () => {
             <div className="users">
                 {users.map((users) =>{
                     return(
-                        <h3>{users.login}</h3>
+                        <div class0Name="users">
+                        <h3>{users.login}</h3>  
+                        </div>
+
                     )
                 })}
             </div>
