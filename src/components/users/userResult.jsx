@@ -1,6 +1,6 @@
-import { UserItem } from "./usersItem";
-import { useEffect, useState } from "react";
-import PropagateLoader from "react-spinners/PropagateLoader";
+import { useEffect, useState } from "react"
+import { UserItem } from "./userItem";
+import { Dna } from 'react-loader-spinner'
 
 export const UserResults = () => {
     const [users, setUsers] = useState([])
@@ -30,8 +30,7 @@ export const UserResults = () => {
             <div className="users">
                 {users.map((user) =>{
                     return(
-                        <div className="users__container">
-                            <h3>{user.login}</h3>  
+                        <div className="users">
                             <UserItem key={user.id} user={user}/>
                         </div>
 
@@ -42,11 +41,14 @@ export const UserResults = () => {
     }else {
         return(
             <div className="spinner">                
-                <PropagateLoader
-                color="#efefef"
-                loading               
-                speedMultiplier={0}
-                />
+                <Dna
+                    visible={true}
+                    height="100"
+                    width="100"
+                    ariaLabel="dna-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="dna-wrapper"
+                    />
             </div>
         )
     }
