@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 export const UserResults = () => {
     const [users, setUsers] = useState([])
@@ -38,8 +39,12 @@ export const UserResults = () => {
         )
     }else {
         return(
-            <div className="spinning">
-                <h3 className="loading">loading</h3>
+            <div className="spinning">                
+                <PropagateLoader
+                color="#efefef"
+                loading
+                speedMultiplier={0}
+                />
             </div>
         )
     }
