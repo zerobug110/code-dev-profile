@@ -2,7 +2,42 @@ body {
   padding: 0;
   margin: 0;
   background-color: #1f0f2a;
+  font-family: 'Lora', serif;
+  font-family: 'Poppins', serif;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+ 
+  &::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+    background: #554360; 
+  }
   
+}
+
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% i.e 1rem = 10px//
+  font-weight: 360;
+
+  // @include respond (tab-land) {
+  //     font-size: 56% ; // 1rem = 9px / 16px = 56%
+  // }
+  // @include respond (tab-port) {
+  //     font-size: 50% ;  // 1rem = 8px / 16px = 50%
+  // }
+  // @include respond (big-desktop) {
+  //     font-size: 75%; // 1rem = 12px / 16 = 75%
+  // }
 }
 
 .App {
@@ -10,4 +45,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+
+  display: grid;
+  grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr 5rem[full-end];
 }

@@ -1,3 +1,5 @@
+import './userItem.scss';
+
 export const UserItem = ({user: {login, avatar_url}}) => {
     return(
         <div className="user">

@@ -1,10 +1,28 @@
 .users {
+    grid-column: col-start 1 / col-end;
+    margin: 5rem 0;
 
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+
+        &--item {
+            
+        }
+    
+    }
+    
     &__container {
         
     }
 }
+
 .spinner {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
 }
