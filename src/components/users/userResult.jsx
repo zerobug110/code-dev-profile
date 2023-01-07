@@ -3,7 +3,7 @@ import { useEffect,  useContext } from "react"
 import { UserItem } from "./userItem/userItem";
 import { Dna } from 'react-loader-spinner';
 import {GithubContext} from '../../context/github/githubContext';
-// import { } from 'react';
+
 
 export const UserResults = () => {
     const {users, loading, fetchUser} = useContext(GithubContext)
