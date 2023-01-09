@@ -2,7 +2,7 @@ import './userResults.scss'
 import { useEffect,  useContext } from "react"
 import { UserItem } from "./userItem/userItem";
 import { Dna } from 'react-loader-spinner';
-import {GithubContext} from '../../context/github/githubContext';
+import GithubContext from '../../context/github/githubContext';
 
 
 export const UserResults = () => {
